@@ -1,0 +1,26 @@
+# config context path to "/" by setting an empty string
+server:
+  contextPath:
+
+# JACKSON
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  datasource:    
+    ## MYSQL
+    url: jdbc:mysql://localhost/walmart
+    username: root
+    password: UTecnologi4
+    driver-class-name: com.mysql.jdbc.Driver    
+
+
+jwt:
+  header: Authorization
+  secret: tasksSecret
+  expiration: 604800
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+
